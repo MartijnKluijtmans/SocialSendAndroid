@@ -198,7 +198,7 @@ public class SendActivity extends BaseActivity implements View.OnClickListener {
                             valueStr = "0" + valueStr;
                         }
                         BigDecimal result = new BigDecimal(valueStr).divide(sendRate.getValue(), 6, BigDecimal.ROUND_DOWN);
-                        txtShowPiv.setText(result.toPlainString() + " PIV");
+                        txtShowPiv.setText(result.toPlainString() + " SEND");
                     } else {
                         txtShowPiv.setText("0 " + sendRate.getCoin());
                     }
